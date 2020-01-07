@@ -40,9 +40,8 @@ const bookShelfData = (data = []) => {
 
 // if data type is array, data has books;
 // if data type is object,  data is empty
-export const getSearchData = (data, addedBooks) => {
+export const getSearchData = (data, addedBooks = {}) => {
   try {
-
     let hasData = Array.isArray(data);
     if (hasData) {
       if (!data.length) return null;

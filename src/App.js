@@ -61,7 +61,7 @@ class App extends Component {
 					</Route>
 
 					<Route exact path="/search">
-						<Finder />
+						<Finder books={books} shelfOptions={shelfOptions} updateShelf={this.updateShelf} />
 					</Route>
 
 					<Route>
